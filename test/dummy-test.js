@@ -12,7 +12,7 @@ describe("Root", function(){
                 .send({})
                 .end((err,res)=>{
                     res.should.have.status(200);
-                    res.body.should.be.deep.equals({message: "Hello World!"})
+                    res.body.should.be.deep.equals({message: "Hello World!..."})
                     done()
                 })
         })
